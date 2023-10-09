@@ -1,0 +1,50 @@
+/* .profile
+{
+    height: 81vh;
+}
+.home2
+{
+    margin-top: 10vh;
+} */
+.profile_main
+{
+    background-color: rgb(236, 234, 234);
+    /* border: 1px solid black; */
+    height: 100vh;
+    
+    
+}
+.input
+{
+    background-color: gainsboro;
+    width: 50%;
+    border: 2px solid black;
+    margin-top: 19vh;
+}
+.btn
+{
+    width: auto;
+    border: none;
+}
+
+.info
+{
+    display: flex;
+    justify-content: center;
+    color: rgb(163, 13, 13);
+}
+
+.clear_info
+{
+    display: flex;
+    justify-content: center;
+}
+.clear_info_btn
+{
+  background-color: gray;
+}
+:hover.clear_info_btn
+{
+    background-color: black;
+    color: white;
+}

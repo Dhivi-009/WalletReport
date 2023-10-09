@@ -1,0 +1,15 @@
+.footer
+{
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    height: 9vh;
+    bottom: 0px;
+    width: 100%;
+    position: fixed;
+   
+}
+.words
+{
+    color: rgb(98, 3, 3);
+}
