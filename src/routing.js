@@ -17,7 +17,7 @@ export default function Routing() {
         <Routes>  
         
         <Route path="/WalletReport" element={<Login/>} />
-        <Route path="/" element={<Login/>} />
+        {/* <Route path="/" element={<Login/>} /> */}
         <Route path="/WalletReport/home" element={<Home />} />
         <Route path="/WalletReport/profile" element={<Profile  />} />
         <Route path="/WalletReport/summary" element={<Summary  />} />
