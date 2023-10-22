@@ -45,6 +45,13 @@ export default function Profile()
             a.value="";
         
         }
+        else if(profile_ref.current.balance > 100000)
+        {
+            alert("The limit is only 1 lakh")
+            var a =document.getElementById('total');
+            a.value="";
+        
+        }
         else
         {
         setbalance(profile_ref.current.balance)
@@ -52,7 +59,7 @@ export default function Profile()
         var b = document.getElementById('total');
         b.value="";
         alert("Amount has been updated")
-        navigate('/home')
+        navigate('/WalletReport/home')
         }
        
     }
@@ -61,7 +68,7 @@ export default function Profile()
     if(localStorage.getItem('logged')==='1') 
     {
     
-    if(formattedDate==='01' || formattedDate==='03')
+    if(formattedDate==='01' || formattedDate==='22')
     {
         
 
@@ -109,7 +116,7 @@ export default function Profile()
     
     <h1>Enter your amount here</h1>
 
-    <input placeholder="Enter your amount" id="total" className="input1" onChange={x=>{profile_ref.current={...profile_ref.current,balance:x.target.value}}}></input>
+    <input placeholder="Enter your amount" id="total" type="number" className="input1" onChange={x=>{profile_ref.current={...profile_ref.current,balance:x.target.value}}}></input>
 
     <button onClick={acknowledge} className="btn">Acknowledge</button> 
 
@@ -142,7 +149,7 @@ export default function Profile()
     
     <h1>Enter your amount here</h1>
 
-    <input disabled placeholder="Enter your amount" id="total" className="input1" onChange={x=>{profile_ref.current={...profile_ref.current,balance:x.target.value}}}></input>
+    <input disabled placeholder="Enter your amount" id="total" type="number" className="input1" onChange={x=>{profile_ref.current={...profile_ref.current,balance:x.target.value}}}></input>
 
     <button disabled onClick={acknowledge} className="btn">Acknowledge</button> 
 

@@ -40,7 +40,7 @@ export default function Summary()
 
         //localStorage.setItem('spent_amount',sum)
         return <tr>
-                   <td>  {formattedDate}  </td>
+                   <td> {formattedDate}  </td>
 
                    <td> {props.Item} </td>
                
@@ -92,10 +92,8 @@ export default function Summary()
 
             <tr>
                 <th>
-                
-                     {/* <Pdf /> */}
-               {/* <button onClick={<Pdf/>} className="pdf">Download PDF</button> */}
-               <button onClick={handleDownload} className="pdf" >Download PDF</button>
+
+               {/* <button onClick={handleDownload} className="pdf" >Download PDF</button> */}
       
                 </th>
                 <th>
@@ -110,7 +108,10 @@ export default function Summary()
 
     
     </section>
-  
+
+    <div className="pdf_main">
+    <button  onClick={handleDownload} className="pdf" >Download PDF</button>
+    </div >
     {/* <div className="pdf_main">
        
         <button onClick={handleDownload} className="pdf">Download PDF</button>

@@ -12,11 +12,11 @@ export default function Password()
         
         if(localStorage.getItem('password')===ref.current.password)
         {
-            navigate('/home')
+            navigate('/WalletReport/home')
             localStorage.setItem('logged',1)
             ref.current.password=""
-            var i =document.getElementById('password');
-            i.value="";
+            var i =document.getElementById('password')
+            i.value=""
  
         }
         else
@@ -32,7 +32,7 @@ export default function Password()
     
     return <div>
        
-        <h1 className="password_heading">WELCOME {localStorage.getItem('name').toUpperCase()}  </h1> 
+        <h1 className="password_heading">WEL {localStorage.getItem('name').toUpperCase()}  </h1> 
          
         <div className="password_main">
         

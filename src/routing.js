@@ -17,10 +17,11 @@ export default function Routing() {
         <Routes>  
         
         <Route path="/WalletReport" element={<Login/>} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/profile" element={<Profile  />} />
-        <Route path="/summary" element={<Summary  />} />
-        <Route path="/password" element={<Password  />} />
+        <Route path="/" element={<Login/>} />
+        <Route path="/WalletReport/home" element={<Home />} />
+        <Route path="/WalletReport/profile" element={<Profile  />} />
+        <Route path="/WalletReport/summary" element={<Summary  />} />
+        <Route path="/WalletReport/password" element={<Password  />} />
         
         </Routes>
         </Balance.Provider>

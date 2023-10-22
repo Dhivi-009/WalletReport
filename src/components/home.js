@@ -34,7 +34,7 @@ async function spent()
   if(balance===0 || balance===null)
   {
     alert("enter amt")
-    navigate('/profile')
+    navigate('/WalletReport/profile')
 }
 
 else

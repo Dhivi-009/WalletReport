@@ -10,9 +10,10 @@ export default function Logout()
     //localStorage.removeItem('password')
     localStorage.setItem('logged',0)
     //console.log(localStorage.getItem('logged'))
-    navigate('/WalletReport')
+    navigate('/WalletReport/password')
     }
-    return <Link to="/WalletReport" onClick={logout}><img className="img" src={a} alt="" /></Link>
+    return <Link to="/WalletReport/password" onClick={logout}><img className="img" src={a} alt="" /></Link>
+    // return <Link to="/WalletReport" onClick={logout}><img className="img" src={a} alt="" /></Link>
 
     // <button onClick={logout}><img className="img" src={a} /></button>
 }

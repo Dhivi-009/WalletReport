@@ -10,9 +10,9 @@ export default function Heading()
 {
     return <div className="heading"> 
    
-        <Link to="/home"><img className="img" src={a} alt="" /></Link>
-        <Link to="/summary"><img className="img" src={b} alt="" /></Link>
-        <Link to="/profile"><img className="img" src={c} alt="" /></Link>
+        <Link to="/WalletReport/home"><img className="img" src={a} alt="" /></Link>
+        <Link to="/WalletReport/summary"><img className="img" src={b} alt="" /></Link>
+        <Link to="/WalletReport/profile"><img className="img" src={c} alt="" /></Link>
         <Logout />
         
         </div>

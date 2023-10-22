@@ -21,7 +21,8 @@ export default function Login()
             // console.log(localStorage.getItem('name'))
             // console.log(localStorage.getItem('password'))
             // navigate('/home')
-            navigate('/password')
+            navigate('/WalletReport/home')
+          
         }
       });
 
@@ -40,7 +41,7 @@ export default function Login()
          {
          localStorage.setItem('user',JSON.stringify(dt))
          }
-         navigate('/home')
+         navigate('/WalletReport/home')
          localStorage.setItem('logged',1)
         }
     }
