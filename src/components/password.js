@@ -32,7 +32,7 @@ export default function Password()
     
     return <div>
        
-        <h1 className="password_heading">WEL {localStorage.getItem('name').toUpperCase()}  </h1> 
+        <h1 className="password_heading">WELLL {localStorage.getItem('name').toUpperCase()}  </h1> 
          
         <div className="password_main">
         
